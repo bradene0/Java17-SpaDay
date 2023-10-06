@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome, User</title>
+</head>
+<body>
+<h1>Welcome, <span th:text="${username}"></span>!</h1>
+<p>Email: <span th:text="${email}"></span></p>
+
+<p>You have successfully registered.</p>
+
+<!-- Link to the service selection form -->
+<a th:href="@{/serviceSelection}">Select Spa Services</a>
+
+
+
+<!-- Display the username and email fields from the submitted user -->
+
+</body>
+</html>
